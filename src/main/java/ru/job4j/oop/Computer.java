@@ -1,5 +1,7 @@
 package ru.job4j.oop;
 
+import java.util.concurrent.Callable;
+
 public class Computer {
 
     private boolean multiMonitor;
@@ -21,6 +23,17 @@ public class Computer {
         this.cpu = cpu;
     }
 
+    public Computer(int ssd, String cpu) {
+        this.ssd = ssd;
+        this.cpu = cpu;
+    }
+
+    public Computer(boolean multiMonitor, double ssd, String cpu) {
+        this.multiMonitor = multiMonitor;
+        this.ssd = (int) ssd;
+        this.cpu = cpu;
+    }
+
     public static void main(String[] args) {
         Computer computer = new Computer(true, 500, "Intel Core I7-10700K");
         computer.printInfo();
@@ -28,5 +41,9 @@ public class Computer {
         comp.printInfo();
         Computer third = new Computer();
         third.printInfo();
+        Computer fourth = new Computer(256, "Zeon E5 2690");
+        fourth.printInfo();
+        Computer fifth = new Computer(true, 512.0, "Intel Atom");
+        fifth.printInfo();
     }
 }
