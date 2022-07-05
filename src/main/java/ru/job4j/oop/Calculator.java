@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public int sumAllOperation(int i) {
-        return sum(i) + this.multiply(i) + minus(i) + divide(i);
+        return sum(i) + multiply(i) + minus(i) + divide(i);
     }
 
     public int multiply(int a) {
@@ -38,7 +38,6 @@ public class Calculator {
         int divide = calculator.divide(30);
         System.out.println(divide);
 
-        Calculator calcSumAll = new Calculator();
         double sumAll = calculator.sumAllOperation(30);
         System.out.println(sumAll);
 
