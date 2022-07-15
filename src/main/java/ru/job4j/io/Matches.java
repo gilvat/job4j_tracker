@@ -15,7 +15,7 @@ public class Matches {
             if (matches > 0 && matches <= Math.min(3, count)) {
                 turn = !turn;
                 count = count - matches;
-                System.out.println("Осталось " + count + " спичек.");
+                System.out.println("Осталось " + count + " спичек. ");
             } else {
                 System.out.println("Вы ввели неправильное число ");
             }
