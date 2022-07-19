@@ -75,7 +75,7 @@ public class StartUI {
             System.out.println("Ошибка удаления заявки.");
         }
     }
-    
+
     public static void showAllItem(Input input, Tracker tracker) {
         System.out.println("=== Show all items ===");
         Item[] items = tracker.findAll();
