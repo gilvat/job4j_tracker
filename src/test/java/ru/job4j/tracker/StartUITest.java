@@ -38,7 +38,6 @@ public class StartUITest {
         assertThat(tracker.findById(item.getId()).getName(), is(replacedName));
     }
 
-
     @Test
     public void whenDeleteItem() {
         Tracker tracker = new Tracker();
