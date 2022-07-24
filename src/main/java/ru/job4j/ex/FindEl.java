@@ -20,6 +20,16 @@ public class FindEl {
         return true;
     }
 
+    public static void process(String[] values, String key, String[] abuses) {
+        try {
+            if (indexOf(values, key) != -1) {
+                sent(key, abuses);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         String[] string = {"A", "B", "C"};
         String newKey = "D";
